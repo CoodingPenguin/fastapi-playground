@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastapi-playground"
+version = "0.1.0"
+description = "practice implementing REST API with fastapi"
+authors = ["CoodingPenguin <coodingpenguin@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.96.0"
+requests = "^2.31.0"
+pytest = "^7.3.1"
+pydantic = "^1.10.8"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
